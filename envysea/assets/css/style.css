@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*-----------------------------------------------
+	* CSS
+	*  
+	* @author Nicholas Cerminara | envysea.com
+---------------------------------------------------*/
+
+
+/*	envysea/includes/header_view
+-----------------------------------------------*/
+#header { position: relative; height: 80px; margin: 20px auto; width: 960px; 
+	box-shadow: 0 0 10px #DDD;
+	-moz-box-shadow: 0 0 10px #DDD;
+	-webkit-box-shadow: 0 0 10px #DDD;
+}
+
+#logo a { background: url(../images/logo.png) no-repeat 0 -170px; bottom: 0; display: block; height: 170px; position: fixed; right: 0; text-indent: -9999px; width: 123px; z-index: 9999; }
+#logo a:hover { background: url(../images/logo.png) no-repeat 0 0; }
+#nav a {  float: left; font-size: 2.2em; margin: 20px; text-decoration: none; }
+
+
+/*	envysea/includes/footer_view
+-----------------------------------------------*/
+#footer { height: 50px; margin: 0 auto; width: 960px;
+	box-shadow: 0 0 10px #DDD;
+	-moz-box-shadow: 0 0 10px #DDD;
+	-webkit-box-shadow: 0 0 10px #DDD;
+}
+#footer_nav a { float: right; margin: 15px; text-decoration: none; }
+
+
+/*	envysea/members_view
+-----------------------------------------------*/
+#members_view { margin: 0 20px; }
+
+
+/*	envysea/forgot_view
+-----------------------------------------------*/
+#forgot_view { margin: 0 226px; }

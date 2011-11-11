@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/*-----------------------------------------------
+	* Base CSS for General Elements
+	*  
+	* @author Nicholas Cerminara | envysea.com
+---------------------------------------------------*/
+	
+/*	General Styles and Classes
+-----------------------------------------------*/
+body { background:#F9F9F9; font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+h1 { font-size: 1.8em; margin: 10px; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.3em; }
+p { margin: 5px 0 5px 0; } 
+a:active { outline: none; }
+a:focus { -moz-outline-style: none; }
+.clear { clear: both; }
+a { color: #E89109; }
+a:hover { color: #B8410B; }
+.active { color: #B8410B; }
+#container { width: 100%; }
+#content { height: 100%; margin: 20px auto; padding: 20px 50px 20px 50px; width: 860px;
+	box-shadow: 0 0 10px #DDD;
+	-moz-box-shadow: 0 0 10px #DDD;
+	-webkit-box-shadow: 0 0 10px #DDD;
+}
+
+.page_header { text-align: center; }
+.error_message { background: #FFF6BF; border: solid 1px #DDD; color: #514721; font-size: 1.2em; margin: 0 auto 10px auto; padding: 12px; text-align: center; }
+.success_message { background: #E6EFC2; border: solid 1px #C6D880; color: #264409; font-size: 1.2em; margin: 0 auto 10px auto; padding: 12px; text-align: center; }
+
+
+/*	NVC CSS3 Selection (Animation/Transition/Transform)
+-----------------------------------------------*/
+@-webkit-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(500%); }
+    to { -webkit-transform: translateY(0%); }
+}
+
+@-moz-keyframes moveFromBottom {
+    from { -moz-transform: translateY(500%); }
+    to { -moz-transform: translateY(0%); }
+}
+
+@-ms-keyframes moveFromBottom {
+    from { -ms-transform: translateY(500%); }
+    to { -ms-transform: translateY(0%); }
+}
+
+.nvc_selection { height: 150px; margin: 35px auto; }
+.nvc_selection li { background: white; float:left; height: 150px; margin-right: 4px; overflow: hidden; position: relative; width: 200px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    
+	transition: all 300ms linear;	
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+}
+
+.nvc_selection li a { color: #666; display: block; height: 100%; position: relative; text-align: center; text-decoration: none; width: 100%; }
+.nvc_selection li a:hover { color: white; }
+.nvc_item { height: 55%; left: 0px; position: absolute; top: 21%; width: 100%; }
+.nvc_link { font-size: 30px; opacity: 0.8; text-align: center;
+    transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+}
+.nvc_tagline { bottom: 0px; color: white; font-size: 14px; left: 0px; position: absolute; text-align:center; width: 100%;
+	opacity: 0.8;
+    transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+}
+.nvc_selection li:hover{ background-color: #333; z-index: 999;
+    transform: scale(1.1);  
+    -webkit-transform: scale(1.1);  
+    -moz-transform: scale(1.1);  
+    -ms-transform: scale(1.1);   
+    -o-transform: scale(1.1);   
+	
+	border-radius: 10px;
+	
+	box-shadow: 0 10px 15px black;
+	-moz-box-shadow: 0 0 10px black;
+	-webkit-box-shadow: 0 0 15px black;
+}
+.nvc_selection li:hover .nvc_tagline { color: orange;
+    -webkit-animation: moveFromBottom 500ms ease;
+    -moz-animation: moveFromBottom 500ms ease;
+    -ms-animation: moveFromBottom 500ms ease;
+}
+
+/*	Forms
+-----------------------------------------------*/
+.form { text-align: center; }
+.form label { font-size: 1.5em; }
+.form input { border: 1px solid grey; color: grey; font-size: 1.3em; height: 50px; margin: 10px; text-align: center; width: 300px;
+	border-radius: 5px;
+}
+.form input:hover { border: 1px solid orange; color: #267393; }
+.form select { border: 1px solid grey; color: grey; font-size: 1.3em; height: 50px; margin: 10px; text-align: center; width: 300px;
+	border-radius: 5px;
+}
+.form select:hover { border: 1px solid orange; color: #267393; }
+.form_button input { cursor: pointer !important; }

@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*-----------------------------------------------
+	* CSS for Admin Pages
+	*  
+	* @author Nicholas Cerminara | envysea.com
+---------------------------------------------------*/
+
+
+/*	Header and Navigation
+-----------------------------------------------*/
+#header { position: relative; height: 80px; margin: 20px auto; width: 960px; 
+	box-shadow: 0 0 10px #DDD;
+	-moz-box-shadow: 0 0 10px #DDD;
+	-webkit-box-shadow: 0 0 10px #DDD;
+}
+
+#logo a { background: url(../images/logo.png) no-repeat 0 -170px; bottom: 0; display: block; height: 170px; position: fixed; right: 0; text-indent: -9999px; width: 123px; z-index: 9999; }
+#logo a:hover { background: url(../images/logo.png) no-repeat 0 0; }
+#nav a {  float: left; font-size: 2em; margin: 20px; text-decoration: none; }
+#quick_nav {
+	position: absolute; bottom: 18px; right: 25px; text-align:right; text-decoration: none;
+}
+
+
+/*	Footer
+-----------------------------------------------*/
+#footer { height: 50px; margin: 0 auto; width: 960px;
+	box-shadow: 0 0 10px #DDD;
+	-moz-box-shadow: 0 0 10px #DDD;
+	-webkit-box-shadow: 0 0 10px #DDD;
+}
+#footer_nav a { float: right; margin: 15px; text-decoration: none; }
+
+
+/*	Admin/home_view
+-----------------------------------------------*/
+#home_view { margin: 0 226px; }
