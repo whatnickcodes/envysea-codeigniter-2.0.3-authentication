@@ -11,6 +11,9 @@ A complete web sample and template of a secure authentication system using the C
 
 PHP version 5.1.6 or newer.
 
+## Changes
+
+Updated to CodeIgniter 2.1.0
 
 ## Intro and Notes
 
