@@ -41,7 +41,9 @@ Updated to CodeIgniter 2.1.0
 9.	Open site and enjoy
 
 ###	Creating your users
+
 There are two users by default - username: "admindude", password: "admindude" and username: "normaldude", password: "normaldude" - We are going to delete both of them and create your own separate to your site
+
 1.  Delete all users from database
 2.  Open application/config/envysea.php, change "salty_salt" and "admin_level" to a random character string unique to your site
 3.  Go to the webpage, and create two new users
