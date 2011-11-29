@@ -41,14 +41,12 @@ Updated to CodeIgniter 2.1.0
 9.	Open site and enjoy
 
 ###	Creating your users
-1.	There are two users by default - username: "admindude", password: "admindude" and username: "normaldude", password: "normaldude" - We are going to delete both of them and create your own separate to your site
-2.	On the website go to members, create two users -- one for normal access and one for normal access
-3.	Login with "admindude, "admindude"
-4.	Go to the admin panel, go to make someone an admin, make your new admin an admin
-5.	Logout, and login with the newly created admin
-6.	Go to the admin panel, and delete the two default users (admindude and normaldude)
-7.	You are now 100% done with the installation and have a fully featured membership site unique and secure to you
-
+There are two users by default - username: "admindude", password: "admindude" and username: "normaldude", password: "normaldude" - We are going to delete both of them and create your own separate to your site
+1.  Delete all users from database
+2.  Open application/config/envysea.php, change "salty_salt" and "admin_level" to a random character string unique to your site
+3.  Go to the webpage, and create two new users
+4.  Go into your database and change the user_level of the user you want to be an admin to equal your new admin_level
+5.  You are now 100% done with the installation and have a fully featured membership site unique and secure to you
 
 ##	Documentation
 
